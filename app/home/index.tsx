@@ -1,12 +1,15 @@
 import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
+import BalanceBox from "../../src/components/BalanceBox";
+import LastTransactions from "../../src/components/LastTransactions";
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <View>
-        <Link href="/index">Go to Index</Link>
-      </View>
+      <Link href="/index">Go to Index</Link>
+      <BalanceBox />
+      <LastTransactions />
     </View>
   );
 }

@@ -6,8 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View>
-        <Text>Open up App.tsx to start working on your app!</Text>
-        <Link href="/profile">Go to Profile</Link>
+        <Link href="/home">Go to Home</Link>
       </View>
     </View>
   );
