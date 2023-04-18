@@ -1,11 +1,12 @@
 import styled from "styled-components/native";
+import colors from "../../styles/colors";
 
 export const Container = styled.View`
   width: 100%;
   height: 130px;
-  background-color: white;
+  background-color: ${colors.white};
   flex-direction: column;
-  border: 3px black solid;
+  border: 3px ${colors.black} solid;
   border-bottom-width: 7px;
   border-right-width: 7px;
   border-radius: 12px;

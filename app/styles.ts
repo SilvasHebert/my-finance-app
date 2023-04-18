@@ -8,6 +8,7 @@ export const GestureHandlerRootView = styled(GestureHandlerRootViewStyled)`
 
 export const ContainerSafeAreaView = styled.SafeAreaView`
   margin-top: ${StatusBar.currentHeight};
+  padding: 10px;
   flex: 1;
   align-items: center;
   background-color: #35c8e677;

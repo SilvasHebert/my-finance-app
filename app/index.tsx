@@ -1,8 +1,7 @@
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import BalanceBox from "../src/components/BalanceBox";
-import LastTransactions, {
-  BottomSheetRefProps,
-} from "../src/components/LastTransactions";
+import { BottomSheetRefProps } from "../src/components/BottomSheet";
+import LastTransactions from "../src/components/LastTransactions";
 
 import { GestureHandlerRootView, ContainerSafeAreaView } from "./styles";
 import { useCallback, useRef } from "react";
@@ -25,13 +24,9 @@ export default function App() {
     <GestureHandlerRootView>
       <ContainerSafeAreaView>
         <ExpoStatusBar />
-        <TouchableOpacity
-          style={{ height: 10, width: 10, backgroundColor: "red" }}
-          onPress={onPress}
-        />
         <BalanceBox />
-        <LastTransactions ref={ref} />
       </ContainerSafeAreaView>
+      <LastTransactions ref={ref} />
     </GestureHandlerRootView>
   );
 }
