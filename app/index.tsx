@@ -1,11 +1,10 @@
+import { useCallback, useRef } from "react";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
-import BalanceBox from "../src/components/BalanceBox";
+
+import Header from "../src/components/Header";
 import { BottomSheetRefProps } from "../src/components/BottomSheet";
 import LastTransactions from "../src/components/LastTransactions";
-
 import { GestureHandlerRootView, ContainerSafeAreaView } from "./styles";
-import { useCallback, useRef } from "react";
-import { TouchableOpacity } from "react-native";
 
 export default function App() {
   const ref = useRef<BottomSheetRefProps>(null);
@@ -23,8 +22,8 @@ export default function App() {
   return (
     <GestureHandlerRootView>
       <ContainerSafeAreaView>
-        <ExpoStatusBar />
-        <BalanceBox />
+        <ExpoStatusBar style="dark" />
+        <Header />
       </ContainerSafeAreaView>
       <LastTransactions ref={ref} />
     </GestureHandlerRootView>
